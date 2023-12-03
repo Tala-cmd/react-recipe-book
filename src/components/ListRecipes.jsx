@@ -1,12 +1,15 @@
 import React from 'react'
 import Recipes from './Recipes'
 
-function ListRecipes() {
+function ListRecipes({ data }) {
   return (
-    <>
-      <div>ListRecipes</div>
-      <Recipes/>
-    </>
+    <div>
+      <ul className='food'>
+        {data.map((recipes)=> 
+        <Recipes recipes={recipes} key={recipes.id} /> )}
+      </ul>
+      
+    </div>
   )
 }
 

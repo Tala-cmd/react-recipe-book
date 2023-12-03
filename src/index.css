@@ -7,6 +7,17 @@ body{
   box-sizing: border-box;
 }
 
+ul{
+  list-style: none;
+  margin:15px;
+  padding:0;
+}
+
+li{
+  margin:0;
+  padding:0;
+}
+
 .header h1 {
   color: #FF6347;
   text-transform: uppercase;
@@ -37,4 +48,64 @@ body{
 
 .header h1::after {
   right: 3%;
+}
+
+.food{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%
+}
+
+.recipe p{
+  color:  #8B4513;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.recipe h3{
+  color:  #FFA500 ;
+  font-size: 15px;
+  text-align: start;
+  font-weight: 400;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+button{
+  background-color:  #FFF8DC;
+  color: #343a40;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color:  #D3E1AB;
+}
+
+.recipe-description{
+background-color: #FDF5E6;
+padding:10px;
+margin:10px;
+}
+
+.recipe-description img{
+  width: 100%;
+  margin-top:20%;
+}
+
+.recipe-description h5{
+  color:  #887551 ;
+  font-size: 15px;
+  text-align: start;
+  font-weight: 400;
 }
