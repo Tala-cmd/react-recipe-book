@@ -71,12 +71,16 @@ li{
   font-weight: 400;
 }
 
-.container{
+.container, .edit-delete-buttons{
 display: flex;
 justify-content: center;
 align-items: center;
-
 }
+
+.edit-delete-buttons{
+  margin:10px;
+}
+
 button{
   background-color:  #FFF8DC;
   color: #343a40;
