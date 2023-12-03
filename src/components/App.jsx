@@ -32,7 +32,6 @@ function App() {
 
   return (
     <div>
-      Tasty Recipes
       <Header />
       <ListRecipes />
       <DetailedRecipes />
