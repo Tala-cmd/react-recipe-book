@@ -1,8 +1,13 @@
 import React, { useState } from 'react'
 
-function Recipes({ recipes }) {
+function Recipes({ recipes, onDelete }) {
   const [showDescription, setShowDescription] = useState(false)
 
+  function handleDelete(){
+    const confirm = window.confirm('Are you sure you want to delete this recipe?');
+    confirm && onDelete(recipes.id)
+  }
+  
   return (
     <li className='recipe'>
       <p>{recipes.name}</p>
@@ -10,7 +15,7 @@ function Recipes({ recipes }) {
 
       <div className='container'>
         <button className='button-1' onClick={()=> setShowDescription(!showDescription) }>Description & Recipe</button>
-        <button className='button-2'>X</button>
+        <button className='button-2' onClick={()=> handleDelete()}>X</button>
       </div>
 
     {showDescription && 

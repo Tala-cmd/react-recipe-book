@@ -1,12 +1,12 @@
 import React from 'react'
 import Recipes from './Recipes'
 
-function ListRecipes({ data }) {
+function ListRecipes({ data, onDelete }) {
   return (
     <div>
       <ul>
         {data.map((recipes)=> 
-        <Recipes recipes={recipes} key={recipes.id} /> )}
+        <Recipes recipes={recipes} key={recipes.id} onDelete={onDelete} /> )}
       </ul>
       
     </div>

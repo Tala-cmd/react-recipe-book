@@ -1,8 +1,9 @@
 import Header from "./Header"
 import ListRecipes from "./ListRecipes"
 import DetailedRecipes from "./DetailedRecipes"
+import { useState } from "react"
 
-const recipes=[
+const recipesArray=[
 {
   id:1,
   name:'Crispy Chicken Tacos',
@@ -38,11 +39,18 @@ const recipes=[
 }
 ]
 function App() {
+  const [recipes, setRecipes] = useState(recipesArray)
+
+  function handleDelete(id){
+    setRecipes((recipes)=> recipes
+    .filter((recipe)=> recipe.id !== id))
+  
+  }
 
   return (
     <div>
       <Header />
-      <ListRecipes data={recipes}/>
+      <ListRecipes data={recipes} onDelete={handleDelete}/>
       <DetailedRecipes />
     </div>
   )
