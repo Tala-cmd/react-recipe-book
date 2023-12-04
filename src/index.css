@@ -218,17 +218,17 @@ margin-bottom:20px;
   }
   
   .header h1::before {
-    left: 10%;
+    left: 25%;
   }
   
   .header h1::after {
-    right: 10%;
+    right: 25%;
   }
   
   .arrow{
     width:45px;
-    right:30%;
-    top:28%;
+    right:37%;
+    top:26%;
   }
   
   .button{
@@ -237,11 +237,11 @@ margin-bottom:20px;
     letter-spacing: 3px;
   }
   
-  .form-add-recipe {
+  .form-add-recipe{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 10%;
-    padding: 80px;
+    row-gap: 5%;
+    padding: 25px;
     place-items: center;
     border-radius: 7px;
   }
@@ -249,13 +249,14 @@ margin-bottom:20px;
   .submit-button{
     grid-column: 4/4;
     grid-row: 3/4;
-    width:100%;
+    width:60%;
     padding: 15px 0;
   }
   
   .recipe p {
-    margin-bottom:2%;
-    font-size: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
   }
   
   .recipe h3 {
@@ -263,11 +264,11 @@ margin-bottom:20px;
   }
   
   .button-1 {
-    padding: 20px;
+    padding: 18px;
   }
   
   .active{
-    padding: 20px;
+    padding: 18px;
   }
   
   .button-2 {

@@ -1,8 +1,7 @@
 import React from 'react'
 import Recipes from './Recipes'
-import NewRecipeForm from './NewRecipeForm'
 
-function ListRecipes({ data, onDelete, onAddRecipe}) {
+function ListRecipes({ data, onDelete}) {
   return (
     <div>
       <ul>

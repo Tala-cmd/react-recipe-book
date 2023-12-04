@@ -56,7 +56,7 @@ function handleSubmit(e){
           <input type='text' className='recipe-description-input'required
           value={recipe} onChange={((e)=> setRecipe(e.target.value))}></input>
 
-          <button className='submit-button' onClick={() => setForm(true)}>Submit</button>
+          <button className='submit-button'>Submit</button>
         </form>
     }
     </>
