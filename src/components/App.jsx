@@ -10,14 +10,17 @@ function App() {
   function handleDelete(id){
     setRecipes((recipes)=> recipes
     .filter((recipe)=> recipe.id !== id))
-  
+  }
+
+  function handleAddRecipe(recipe){
+    setRecipes((recipes)=> [recipe, ...recipes])
   }
 
   return (
     <div>
       <Header />
-      <NewRecipeForm />
-      <ListRecipes data={recipes} onDelete={handleDelete}/>
+      <NewRecipeForm onAddRecipe={handleAddRecipe} />
+      <ListRecipes data={recipes} onDelete={handleDelete} />
     </div>
   )
 }

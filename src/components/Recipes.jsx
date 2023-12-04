@@ -7,7 +7,7 @@ function Recipes({ recipes, onDelete }) {
     const confirm = window.confirm('Are you sure you want to delete this recipe?');
     confirm && onDelete(recipes.id)
   }
-  
+
   return (
     <li className='recipe'>
       <p>{recipes.name}</p>
@@ -20,7 +20,7 @@ function Recipes({ recipes, onDelete }) {
 
     {showDescription && 
       <div className='recipe-description'>
-        <img src={recipes.imageName}></img>
+        <img src={recipes.image}></img>
         <p>Description:</p>
         <h5>{recipes.description}</h5>
 
