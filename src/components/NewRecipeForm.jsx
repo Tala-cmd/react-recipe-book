@@ -5,9 +5,9 @@ function NewRecipeForm() {
 
   return (
     <>
-    {form ?  <img className='arrow' src='./public/curved-arrow.svg'></img>
+    {form ?  <img className='arrow' src='recipes/curved-arrow.svg'></img>
     :
-    <img className='line' src='./public/random-lines.svg'></img>
+    <img className='line' src='recipes/random-lines.svg'></img>
     }
     
     {/* */}
