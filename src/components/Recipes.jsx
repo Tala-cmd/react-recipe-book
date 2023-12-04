@@ -9,11 +9,8 @@ function Recipes({ recipes }) {
       <h3>{recipes.ingredients}</h3>
 
       <div className='container'>
-        <button onClick={()=> setShowDescription(!showDescription) }>Description & Recipe</button>
-      </div>
-
-      <div className='edit-delete-buttons'>
-        <button>Delete Recipe</button>
+        <button className='button-1' onClick={()=> setShowDescription(!showDescription) }>Description & Recipe</button>
+        <button className='button-2'>X</button>
       </div>
 
     {showDescription && 

@@ -4,7 +4,7 @@ import Recipes from './Recipes'
 function ListRecipes({ data }) {
   return (
     <div>
-      <ul className='food'>
+      <ul>
         {data.map((recipes)=> 
         <Recipes recipes={recipes} key={recipes.id} /> )}
       </ul>
