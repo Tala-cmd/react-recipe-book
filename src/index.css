@@ -79,19 +79,24 @@ li {
 }
 
 .form-add-recipe {
-  grid-template-columns:  1.5fr;
-  margin-bottom: 5rem;
   padding: 10px;
-  margin:0px 100px;
+  margin:0px 90px;
   background-color: #f9c1b8;
   transition: 0.3s;
 }
 
-input,
-select {
-
+input,select {
   position: block;
   padding: 10px;
+  text-align: center;
+  border: 1px solid  #f9c1b8;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.recipe-description-input{
+  position: block;
+  padding: 22px 10px;
   text-align: center;
   border: 1px solid  #f9c1b8;
   border-radius: 4px;
@@ -149,8 +154,20 @@ margin-bottom:20px;
   transition: 0.3s;
 }
 
-.button-1:hover {
+.button-1:hover, .button-1:active {
   background-color: #d3e1ab;
+}
+
+.active{
+  background-color: #d3e1ab;
+  color: #343a40;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+
 }
 
 .button-2 {
@@ -175,8 +192,9 @@ margin-bottom:20px;
 }
 
 .recipe-description img {
-  width: 100%;
-  
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 .recipe-description h5 {
@@ -184,4 +202,95 @@ margin-bottom:20px;
   font-size: 15px;
   text-align: center;
   font-weight: 400;
+}
+
+/* For Medium Devices */
+@media screen and (min-width: 576px){
+  .header h1 {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+  }
+  
+  .header h1::before,
+  .header h1::after {
+    height: 5px;
+    width: 5rem;
+  }
+  
+  .header h1::before {
+    left: 10%;
+  }
+  
+  .header h1::after {
+    right: 10%;
+  }
+  
+  .arrow{
+    width:45px;
+    right:30%;
+    top:28%;
+  }
+  
+  .button{
+    padding: 15px;
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+  
+  .form-add-recipe {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10%;
+    padding: 80px;
+    place-items: center;
+    border-radius: 7px;
+  }
+
+  .submit-button{
+    grid-column: 4/4;
+    grid-row: 3/4;
+    width:100%;
+    padding: 15px 0;
+  }
+  
+  .recipe p {
+    margin-bottom:2%;
+    font-size: 30px;
+  }
+  
+  .recipe h3 {
+    font-size: 20px;
+  }
+  
+  .button-1 {
+    padding: 20px;
+  }
+  
+  .active{
+    padding: 20px;
+  }
+  
+  .button-2 {
+    padding: 15px;
+    font-size: 24px;
+  }
+  
+  .recipe-description {
+    padding: 30px;
+    max-width: 40%;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .recipe-description img {
+    
+    max-width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .recipe-description h5 {
+    font-size: 18px;
+  }
+
 }

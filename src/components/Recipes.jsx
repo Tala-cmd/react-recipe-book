@@ -14,13 +14,13 @@ function Recipes({ recipes, onDelete }) {
       <h3>{recipes.ingredients}</h3>
 
       <div className='container'>
-        <button className='button-1' onClick={()=> setShowDescription(!showDescription) }>Description & Recipe</button>
+        <button className={showDescription ? 'active' : 'button-1'} onClick={()=> setShowDescription(!showDescription) }>Description & Recipe</button>
         <button className='button-2' onClick={()=> handleDelete()}>X</button>
       </div>
 
     {showDescription && 
       <div className='recipe-description'>
-        <img src={recipes.image}></img>
+        <img src={recipes.image} alt={recipes.name}></img>
         <p>Description:</p>
         <h5>{recipes.description}</h5>
 

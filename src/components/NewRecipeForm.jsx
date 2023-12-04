@@ -37,27 +37,27 @@ function handleSubmit(e){
         <button className='button' onClick={()=> setForm(!form)}>Add a new recipe?</button>
       </div> 
       : 
-      <div className='container'>
         <form className='form-add-recipe' onSubmit={handleSubmit}> 
 
           <label>Name of the recipe</label>
-          <input type='text' value={name} onChange={(e)=> setName(e.target.value)}></input>
+          <input type='text' value={name} onChange={(e)=> setName(e.target.value)} required></input>
 
           <label>Ingredients</label>
-          <input type='text' value={ingredients} onChange={((e)=> setIngredients(e.target.value))}></input>
+          <input type='text' value={ingredients} onChange={((e)=> setIngredients(e.target.value))} required></input>
 
           <label>Image URL</label>
-          <input type='text' value={image} onChange={(e)=> setImage(e.target.value)}></input>
-
+          <input type='text' value={image} onChange={(e)=> setImage(e.target.value)} required></input>
+          
           <label>Description</label>
-          <input type='text' value={description} onChange={((e)=> setDescription(e.target.value))}></input>
+          <input type='text' className='recipe-description-input' required
+          value={description} onChange={((e)=> setDescription(e.target.value))}></input>
 
           <label>Recipe</label>
-          <input type='text' value={recipe} onChange={((e)=> setRecipe(e.target.value))}></input>
+          <input type='text' className='recipe-description-input'required
+          value={recipe} onChange={((e)=> setRecipe(e.target.value))}></input>
 
-          <button className='submit-button'>Submit</button>
+          <button className='submit-button' onClick={() => setForm(true)}>Submit</button>
         </form>
-      </div>
     }
     </>
   )
