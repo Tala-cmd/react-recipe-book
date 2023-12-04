@@ -63,7 +63,6 @@ li {
   transform: rotate(70deg);
   right:15%;
   transition: 0.4s;
-
 }
 
 .button{
@@ -76,6 +75,40 @@ li {
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.form-add-recipe {
+  grid-template-columns:  1.5fr;
+  margin-bottom: 5rem;
+  padding: 10px;
+  margin:0px 100px;
+  background-color: #f9c1b8;
+  transition: 0.3s;
+}
+
+input,
+select {
+
+  position: block;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid  #f9c1b8;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.submit-button{
+  background: none;
+  border:1px solid  #ff6347;
+  color: #ff6347;
+  border-radius: 7px;
+  margin-top:10px;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   transition: 0.3s;
 }
 
