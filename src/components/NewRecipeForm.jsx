@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function NewRecipeForm({ onAddRecipe }) {
   const [form, setForm] = useState(true)
@@ -33,7 +33,6 @@ function handleSubmit(e){
     <>
     {form ? 
       <div className='container'> 
-        <img className='arrow' src='recipes/curved-arrow.svg'></img> 
         <button className='button' onClick={()=> setForm(!form)}>Add a new recipe?</button>
       </div> 
       : 

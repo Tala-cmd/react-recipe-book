@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function Recipes({ recipes, onDelete }) {
   const [showDescription, setShowDescription] = useState(false)

@@ -50,23 +50,11 @@ li {
   right: 3%;
 }
 
-.line, .arrow{
-  position:absolute;
-  filter: invert(1);
-  width:40px;
-  transform: rotate(35deg);
-  transition: 0.4s;
-  right:20%;
-}
-
-.arrow{
-  transform: rotate(70deg);
-  right:15%;
-  transition: 0.4s;
-}
 
 .button{
   background: none;
+  text-decoration: underline;
+  font-style: italic;
   border: none;
   color: #ff6347;
   padding: 5px;
@@ -213,24 +201,18 @@ margin-bottom:20px;
   
   .header h1::before,
   .header h1::after {
-    height: 5px;
-    width: 5rem;
+    height: 3px;
+    width: 2rem;
   }
   
   .header h1::before {
-    left: 25%;
+    left: 15%;
   }
   
   .header h1::after {
-    right: 25%;
+    right: 15%;
   }
-  
-  .arrow{
-    width:45px;
-    right:37%;
-    top:26%;
-  }
-  
+
   .button{
     padding: 15px;
     font-size: 25px;
@@ -294,4 +276,14 @@ margin-bottom:20px;
     font-size: 18px;
   }
 
+}
+
+@media screen and (min-width: 1024px){
+  .header h1::before {
+    left: 25%;
+  }
+  
+  .header h1::after {
+    right: 25%;
+  }
 }
